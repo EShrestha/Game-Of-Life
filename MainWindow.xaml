@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Game_of_Life"
         mc:Ignorable="d"
-        Title="MainWindow" Height="1000" Width="1000">
-    <Grid>
+        Title="MainWindow" Height="1000" Width="1000" ResizeMode="NoResize">
+
+    <StackPanel Height="1000">
+        <Menu DockPanel.Dock="Top" Grid.Row="0">
+            <MenuItem Header="Option">
+                <MenuItem Header="Run" x:Name="Run" Click="Run_Click"/>
+                <MenuItem Header="Pause" x:Name="Pause" Click="Pause_Click"/>
+            </MenuItem>
+        </Menu>
+            <Grid x:Name="grid" Height="944">
         
-    </Grid>
+            </Grid>
+    </StackPanel>
+   
+
 </Window>
